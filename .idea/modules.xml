@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/UPnPManager-old.iml" filepath="$PROJECT_DIR$/.idea/UPnPManager-old.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UPnPManager.iml" filepath="$PROJECT_DIR$/.idea/UPnPManager.iml" />
     </modules>
   </component>
 </project>
