@@ -8,6 +8,7 @@ import upnpy
 from upnpy.exceptions import *
 
 import logging
+import time
 
 # global logger settings
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -36,4 +37,20 @@ if __name__ == '__main__':
     mapping = get_portmapings()
     print(mapping)
 
+    upnp = upnpy.UPnP()
 
+    count = 0
+    succes = False
+    igd = None
+    while not succes and count < 10:
+        time.sleep(2)
+        try:
+            igd = upnp.get_igd()
+
+        except:
+            print(f"Failed to get IGD count is {count}")
+            succes = False
+            count += 1
+    if succes:
+        service = igd['WANPPPConnection.1']
+        service.get_actions()
