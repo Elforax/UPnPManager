@@ -1,0 +1,32 @@
+{
+  "master" :
+    {
+      "port" : [2000, 2200],
+      "type" : "UDP"
+    }
+  ,
+  "account" :
+    {
+      "port" : [5000, 5000],
+      "type" : "TCP"
+    }
+  ,
+  "auth" :
+    {
+      "port" : [1001, 1001],
+      "type" : "UDP"
+    }
+  ,
+  "world" :
+    {
+      "port" : [3000, 3200],
+      "type" : "UDP"
+    }
+  ,
+    "chat" :
+    {
+      "port" : [2005, 2005],
+      "type" : "UDP"
+    }
+
+}
